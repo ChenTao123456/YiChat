@@ -15,6 +15,7 @@
 		04D4C5CC1D2D0421005AE3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C5CA1D2D0421005AE3D3 /* LaunchScreen.storyboard */; };
 		04D4C5D71D2D0421005AE3D3 /* MyYiChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C5D61D2D0421005AE3D3 /* MyYiChatTests.m */; };
 		04D4C5E21D2D0421005AE3D3 /* MyYiChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C5E11D2D0421005AE3D3 /* MyYiChatUITests.m */; };
+		D76017C704CF1D5BD3526BC3 /* libPods-MyYiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53547757718E933276AF7FE4 /* libPods-MyYiChat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		04D4C5DD1D2D0421005AE3D3 /* MyYiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyYiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4C5E11D2D0421005AE3D3 /* MyYiChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyYiChatUITests.m; sourceTree = "<group>"; };
 		04D4C5E31D2D0421005AE3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53547757718E933276AF7FE4 /* libPods-MyYiChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyYiChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73348796ACDF9D0BA93AA4CD /* Pods-MyYiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYiChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyYiChat/Pods-MyYiChat.release.xcconfig"; sourceTree = "<group>"; };
+		C87C7ED4280554044E0B89D8 /* Pods-MyYiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYiChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyYiChat/Pods-MyYiChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76017C704CF1D5BD3526BC3 /* libPods-MyYiChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				04D4C5D51D2D0421005AE3D3 /* MyYiChatTests */,
 				04D4C5E01D2D0421005AE3D3 /* MyYiChatUITests */,
 				04D4C5BA1D2D0421005AE3D3 /* Products */,
+				10A876E8942572A56652F465 /* Pods */,
+				4BA018C154CBE3AD86E9945C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = MyYiChatUITests;
 			sourceTree = "<group>";
 		};
+		10A876E8942572A56652F465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C87C7ED4280554044E0B89D8 /* Pods-MyYiChat.debug.xcconfig */,
+				73348796ACDF9D0BA93AA4CD /* Pods-MyYiChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BA018C154CBE3AD86E9945C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53547757718E933276AF7FE4 /* libPods-MyYiChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D4C5E61D2D0421005AE3D3 /* Build configuration list for PBXNativeTarget "MyYiChat" */;
 			buildPhases = (
+				871896AD38EE4322DC4B7CF1 /* [CP] Check Pods Manifest.lock */,
 				04D4C5B51D2D0421005AE3D3 /* Sources */,
 				04D4C5B61D2D0421005AE3D3 /* Frameworks */,
 				04D4C5B71D2D0421005AE3D3 /* Resources */,
+				3700ABBD2C03B3F386197041 /* [CP] Embed Pods Frameworks */,
+				5D2A6098FA309D6D0DD21E8A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3700ABBD2C03B3F386197041 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyYiChat/Pods-MyYiChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2A6098FA309D6D0DD21E8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyYiChat/Pods-MyYiChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		871896AD38EE4322DC4B7CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04D4C5B51D2D0421005AE3D3 /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		04D4C5E71D2D0421005AE3D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87C7ED4280554044E0B89D8 /* Pods-MyYiChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyYiChat/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		04D4C5E81D2D0421005AE3D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73348796ACDF9D0BA93AA4CD /* Pods-MyYiChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyYiChat/Info.plist;
@@ -496,6 +573,7 @@
 				04D4C5E81D2D0421005AE3D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D4C5E91D2D0421005AE3D3 /* Build configuration list for PBXNativeTarget "MyYiChatTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				04D4C5EB1D2D0421005AE3D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04D4C5EC1D2D0421005AE3D3 /* Build configuration list for PBXNativeTarget "MyYiChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				04D4C5EE1D2D0421005AE3D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
